@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTwins Systems - Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Dodany styl dla paska pod nagłówkiem */
+        .header-bar {
+            background-color: rgb(71, 64, 63);
+            height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="display: flex; align-items: center; justify-content: center;">
+    <div style="margin-right: 10px;">
+        <img src="logo.png" alt="TechTwins Systems Logo" style="max-width: 50px; height: auto; border-radius: 50%;">
+    </div>
+    <div style="flex-grow: 1; text-align: center;">
+        <h1 style="margin: 0;">TechTwins Systems</h1>
+    </div>
+</header>
+
+
+    <!-- Dodany pasek pod nagłówkiem -->
+    <div class="header-bar">
+        <!-- Ikona umieszczona na pasku -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <img src="icon2.png" alt="Menu Icon" style="float: right; margin-right: 10px; margin-top: 10px;">
+        </div>
+    </div>
+
+    <nav>
+        <!-- Reszta kodu pozostaje bez zmian -->
+        <div class="menu-links" id="menuLinks">
+            <div class="menu-header">
+                <div class="logo-container">
+                    <!-- Usunięte logo -->
+                </div>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <img src="icon2.png" alt="Menu Icon">
+                </div>
+            </div>
+            <a href="index.html" onclick="toggleMenu()">Home</a>
+            <a href="virtual_friend.html" onclick="toggleMenu()">Virtual Friend</a>
+        </div>
+    </nav>
+
+    <section>
+        <h2>About Us</h2>
+        <p>Welcome on our community website, We are polish firm named TechTwins Systems.</p>
+	<p>We're working on creating advanced applications.</p>
+
+        <h2>Our Services</h2>
+        <p>Explore our services!</p>
+        <p>We'll have as soon as it possible, the wide range of IT services.</p>
+	<p>At this moment, We can offer you our Virtual Friend app, based on Ai.</p>
+
+        <h2>Join Our Community</h2>
+        <p>Become a part of our thriving community. Connect with like-minded individuals, share knowledge, and
+            collaborate on exciting projects.</p>
+	<p>Yeah! You can do it, just join our Discord and enjoy the fun and amazing prizes that you can win just participating in our Evenst</p>
+    </section>
+
+    <footer style="position: fixed; bottom: 0; width: 100%;">
+    <p>&copy; 2024 TechTwins Systems. All rights reserved.</p>
+</footer>
+
+
+    <script>
+        function toggleMenu() {
+            var menuLinks = document.getElementById('menuLinks');
+            menuLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

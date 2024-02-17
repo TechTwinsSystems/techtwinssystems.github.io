@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTwins Systems - Virtual Friend</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Dodany styl dla paska pod nagłówkiem */
+        .header-bar {
+            background-color: rgb(71, 64, 63);
+            height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="display: flex; align-items: center; justify-content: center;">
+    <div style="margin-right: 10px;">
+        <img src="logo.png" alt="TechTwins Systems Logo" style="max-width: 50px; height: auto; border-radius: 50%;">
+    </div>
+    <div style="flex-grow: 1; text-align: center;">
+        <h1 style="margin: 0;">Virtual Friend</h1>
+    </div>
+</header>
+
+
+    <!-- Dodany pasek pod nagłówkiem -->
+    <div class="header-bar">
+        <!-- Ikona umieszczona na pasku -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <img src="icon2.png" alt="Menu Icon" style="float: right; margin-right: 10px; margin-top: 10px;">
+        </div>
+    </div>
+
+    <nav>
+        <!-- Reszta kodu pozostaje bez zmian -->
+        <div class="menu-links" id="menuLinks">
+            <div class="menu-header">
+                <div class="logo-container">
+                    <!-- Usunięte logo -->
+                </div>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <img src="icon2.png" alt="Menu Icon">
+                </div>
+            </div>
+            <a href="index.html" onclick="toggleMenu()">Home</a>
+            <a href="virtual_friend.html" onclick="toggleMenu()">Virtual Friend</a>
+        </div>
+    </nav>
+
+    <section>
+	<h2>What it is</h2>
+	<p>Our app is like the title said a virtual friend</p>
+	<p>At this moment VF is based on our simply Ai design</p>
+	<p>If u wanna use it, it's just download from link below, and activate our product</p>
+	<p>For more info, check up our discord</p>
+	<a href="https://raw.githubusercontent.com/djqbuz/TTSVF/main/instalator.exe" download="instalator.exe">
+        <img src="download.png" alt="Pobierz plik" style="width: 190
+px; height: 100px;">
+    </a>
+		<br>
+	<a href="https://discord.gg/buxuD3J7Tn">
+	<img src="discord_icon.png" style="width: 50px; height: 50px; margin: 10px;">
+	</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <footer style="position: fixed; bottom: 0; width: 100%;">
+    <p>&copy; 2024 TechTwins Systems. All rights reserved.</p>
+</footer>
+
+
+    <script>
+        function toggleMenu() {
+            var menuLinks = document.getElementById('menuLinks');
+            menuLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
